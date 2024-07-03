@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<style>
+    .containers {
+        max-width: 1400px;
+        width: 100%;
+        padding: 60px 0;
+    }
+
+    .slide-container {
+        margin: 0 30px;
+        overflow: hidden;
+    }
+
+    .card {
+        background: #fff;
+        border-radius: 8px;
+    }
+
+    .card .image-box {
+        height: 100% !important;
+    }
+
+    .card .image-box img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .card .profile-details {
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+        padding: 15px;
+    }
+
+    .card .profile-details img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+
+    .profile-details .name {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .profile-details .job {
+        font-size: 12px;
+        font-weight: 500;
+        color: #4d4d4d;
+    }
+
+    .swiper-navBtn {
+        color: #fff;
+        height: 50px;
+        width: 50px;
+        transform: translateY(-40%);
+        background: #f77e23;
+        border-radius: 50%;
+        margin-inline: 50px;
+    }
+
+    .swiper-navBtn::before,
+    .swiper-navBtn::after {
+        font-size: 24px;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #333;
+    }
+</style>
+
+<style>
+    @media screen and (min-width:1400px) {
+        .sdsd {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <div class="img-king">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container mt-3">
+                    <h3>Fountain</h3>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white " aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-white " aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-white " aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-white " aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-white " aria-current="page" href="#">Home</a>
+                            </li>
+
+                        </ul>
+                        <form class="d-flex ms-5 align-items-center">
+                            <div>
+                                <i class="bi bi-search text-white ms-5"></i>
+                            </div>
+                            <div class="nav-item">
+                                <a class="nav-link active text-white me-4" aria-current="page" href="#">Login</a>
+                            </div>
+                            <button class="btn bg-white text-danger" type="submit">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <div class="Hss context-body text-center position-absolute top-50 start-50 translate-middle">
+                <div class=" text-white">
+                    <h1>A Classical Education <br> for the Future</h1>
+                </div>
+                <div class=" text-white mt-3">
+                    <p>We prepare you to engage in the world that is and to help bring <br> about a world
+                        that ought to
+                        be</p>
+                </div>
+                <div class="button mt-5">
+                    <button class="text-white">Get Started</button>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section>
+        <div
+            class="Hss1 p-4 mb-2 bg-white text-dark w-75 position-absolute top-100 start-50 translate-middle bg-body-tertiary rounded">
+            <div class="container">
+                <div class="row ms-3 ">
+                    <div class=" col-md-4 col-12 d-flex">
+                        <div class="icon ">
+                            <i class="bi bi-chat-left-dots-fill"></i>
+                        </div>
+                        <div class="mt-2 ms-3">
+                            <h5 class="text-black">Live chat</h5>
+                        </div>
+                    </div>
+                    <div class=" col-md-4 col-12  d-flex">
+                        <div class="icon ">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <div class="mt-2 ms-3">
+                            <h5 class="text-black">Examination</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 d-flex">
+                        <div class="icon ">
+                            <i class="bi bi-person-fill"></i>
+                        </div>
+                        <div class="mt-2 ms-3">
+                            <h5 class="text-black">Competition</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="Hss2 mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-12">
+                        <h1 class="justify-content-center d-flex py-5">Top cartegories</h1>
+                    </div>
+                    <div class="col-6 col-12 mt-4">
+                        <div class="containers swiper">
+                            <div class="slide-container">
+                                <div class="card-wrapper swiper-wrapper">
+                                    <div class="card swiper-slide">
+                                        <div class="image-box">
+                                            <img src="img/1img.png" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <div class="image-box">
+                                            <img src="img/2img.png" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <div class="image-box">
+                                            <img src="img/3img.png" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <div class="image-box">
+                                            <img src="img/4img.png" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <div class="image-box">
+                                            <img src="img/1img.png" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <div class="image-box">
+                                            <img src="img/2img.png" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <div class="image-box">
+                                            <img src="img/3img.png" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <div class="image-box">
+                                            <img src="img/4img.png" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next swiper-navBtn"></div>
+                            <div class="swiper-button-prev swiper-navBtn"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="Hss3 mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12 mt-5">
+                        <div class="text-center">
+                            <img src="img/im1.png" alt="" class="img-fluid">
+                        </div>
+                        <div>
+                            <!-- <img src="" alt=""> -->
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 you">
+                        <div class="fs-1">
+                            <h1>We are Experts <br> Learning Institution</h1>
+                        </div>
+                        <div class="mt-4 fs-5">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit elit, bibendum volutpat
+                                platea mi, adipiscing eget magna. Eu nulla ut urna venenatis velit et tincidunt. Id
+                                vitae velit </p>
+                        </div>
+                        <div class="Hss mt-5">
+                            <button class="button text-white">Enroll now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        </div>
+    </section>
+
+    <section>
+        <div class="Hss4">
+            <div class="container sdsd">
+                <div class="row">
+                    <div class="col-md-6 col-12 you  align-content-center ">
+                        <div class="fs-1">
+                            <h1>Our online <br><span class="span">examination </span>is<br> top-notch</h1>
+                        </div>
+                        <div class="mt-4 fs-5">
+                            <p> Prepare your self for greater challenges <br> with our online examination. </p>
+                        </div>
+                        <div class="Hss mt-5">
+                            <button class="button text-white">Take a test</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 ">
+                        <div class="">
+                            <img src="img/im2.png" alt="" class="img-fluid">
+                        </div>
+                        <div>
+                            <!-- <img src="" alt=""> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        </div>
+    </section>
+
+    <section>
+        <div class=" mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-12">
+                        <h1 class="justify-content-center d-flex py-5">Popular examination</h1>
+                    </div>
+                    <div class="col-6 col-12">
+                        <div class="containers swiper">
+                            <div class="slide-container">
+                                <div class="card-wrapper swiper-wrapper">
+                                    <div class="card swiper-slide">
+                                        <div class="image-box">
+                                            <img src="img/p0.png" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <div class="image-box">
+                                            <img src="img/p1.png" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <div class="image-box">
+                                            <img src="img/p2.png" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <div class="image-box">
+                                            <img src="img/p3.png" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <div class="image-box">
+                                            <img src="img/p0.png" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <div class="image-box">
+                                            <img src="img/p1.png" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <div class="image-box">
+                                            <img src="img/p2.png" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <div class="image-box">
+                                            <img src="img/p3.png" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next swiper-navBtn"></div>
+                            <div class="swiper-button-prev swiper-navBtn"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="mt-5">
+            <h1 class="text-center py-5">Competate with various scholars <br>
+                around the globe
+            </h1>
+        </div>
+        <div class="Hss6 mt-1">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6 col-12">
+                        <div class="text-center img1">
+                            <img src="img/im3.png" alt="" class="img-fluid">
+                        </div>
+                        <div>
+                            <!-- <img src="" alt=""> -->
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 you mt-5">
+                        <div class="input">
+                            <div class="text-center mb-">
+                                <h6>Registration to get notified about new competition and article we <br> publish.</h6>
+                            </div>
+                            <form id="registrationForm ">
+                                <div class="form-group ">
+                                    <input type="text" id="fullName" name="fullName" class="form-control" required
+                                        placeholder="Full name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" class="form-control" required
+                                        placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control" required
+                                        placeholder="Phone number">
+                                </div>
+                                <div class="form-floating">
+                                    <select class="form-select" id="floatingSelect"
+                                        aria-label="Floating label select example">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="d-flex justify-content-end py-5">
+                                    <button type="submit" class="btn">Register</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        </div>
+    </section>
+
+    <section>
+        <div class=" mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-12">
+                        <h1 class="justify-content-center d-flex py-5">Popular examination</h1>
+                    </div>
+                    <div class="col-6 col-12">
+                        <div class="containers swiper">
+                            <div class="slide-container">
+                                <div class="card-wrapper swiper-wrapper">
+                                    <div class="card swiper-slide">
+                                        <div class="image-box">
+                                            <img src="img/p0.png" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <div class="image-box">
+                                            <img src="img/p1.png" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <div class="image-box">
+                                            <img src="img/p2.png" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <div class="image-box">
+                                            <img src="img/p3.png" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <div class="image-box">
+                                            <img src="img/p0.png" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <div class="image-box">
+                                            <img src="img/p1.png" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <div class="image-box">
+                                            <img src="img/p2.png" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <div class="image-box">
+                                            <img src="img/p3.png" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next swiper-navBtn"></div>
+                            <div class="swiper-button-prev swiper-navBtn"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br><br>
+    <footer class="Hss7 bg-black">
+        <div class=" mt-5">
+            <br><br>1
+            <div class="container ">
+                <div class="row">
+                    <div class="col-lg-6 text-light  mt-4">
+                        <div >
+                            <h3>Fountain</h3>
+                            <p>We are not here to sell you <br> products, we sell value through <br> our expertise.</p>
+                        </div>
+
+                        <div>
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-twitter ms-3"></i>
+                            <i class="bi bi-instagram ms-3"></i>
+                            <i class="bi bi-linkedin ms-3"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3  text-light  mt-4">
+                        <div>
+                            <h6>Address:</h6>
+                            <p>38 opebi Road, Ikeja, Lagos State, Nigeia.</p>
+                        </div>
+                        <div>
+                            <h6>Phone:</h6>
+                            <p>+2349022396389</p>
+                        </div>
+                        <div>
+                            <h6>Email:</h6>
+                            <p>contact@contentionary.com</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3  text-light  mt-4 text-center">
+                        <h6>Company</h6>
+                        <p class="mt-1">About Us</p>
+                        <p>Features</p>
+                        <p>Pricing</p>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="text-light text-center">
+                        <h4>Subscribe to get latest updates</h4>
+                    </div>
+                    <div class="d-flex justify-content-center mb-5 mt-3">
+                        <div class=" input-group mb-3 w-50">
+                            <input type="text" class="inp form-control" placeholder="Your Email address"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <span class="butt  input-group-text" id="basic-addon2">Subscribe</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div>
+                        <img src="img/Hss.png" alt="">
+                    </div>
+                    <div class="ms-4 ">
+                        <h4 class="text-light">Powered By Contentionary</h4>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<!-- 
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+</html>

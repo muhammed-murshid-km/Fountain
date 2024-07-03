@@ -1,0 +1,149 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.img-king {
+    background-image: url(img/img1.png);
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar h3 {
+    color: rgba(247, 126, 35, 1);
+}
+
+.navbar a {
+    margin-left: 50px;
+}
+
+.Hss h1 {
+    font-size: 75px;
+}
+
+.Hss p {
+    font-size: 25px;
+}
+
+.Hss button {
+    background: rgba(255, 111, 40, 1);
+    width: 140px;
+    height: 50px;
+    border-radius: 05px;
+    border: solid 0px;
+    font-size: 13px;
+
+}
+.Hss button:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.Hss1 {
+    border-radius: 10px;
+    margin-top: -50px;
+    background: rgba(255, 255, 255, 1);
+
+}
+
+.Hss1 .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    background: rgba(255, 231, 219, 1);
+    color: rgba(255, 111, 40, 1);
+    border-radius: 50%;
+
+}
+
+.Hss3 {
+    background-image: url(img/Rectangle\ 16\ \(1\).png);
+    background-size: cover;
+    background-position: center;
+}
+.Hss3 img{
+    width:400px;
+}
+
+.Hss3 .you {
+    margin-top: 100px;
+}
+
+.Hss3 .span {
+    color: chocolate;
+}
+
+.Hss4 {
+    background-image: url(img/Rectangle\ 16\ \(1\).png);
+    background-size: cover;
+    background-position: center;
+}
+.Hss4 img{
+    width:400px;
+}
+.Hss6 {
+    background-image: url(img/Rectangle\ 16\ \(1\).png);
+    background-size: cover;
+    background-position: center;
+}
+.Hss6 img{
+    width: 500px;
+}
+
+.Hss6 .input {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+
+}
+
+.Hss6 .form-group .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.Hss6 .btn {
+    background: rgba(255, 111, 40, 1);
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 3px;
+    width: 200px;
+}
+.Hss7 h3{
+    color: rgba(247, 126, 35, 1);
+}
+.Hss7 .inp{
+    color: rgba(247, 126, 35, 1);
+    height: 50px;
+    border-radius: 0%;
+}
+.Hss7 .butt{
+    background: rgba(247, 126, 35, 1);
+    color: white;
+    border-radius: 0%;
+}
+
+@media screen and (max-width:450px) {
+    .Hss h1 {
+        font-size: 30px;
+        width: 400px;
+
+    }
+    .Hss p {
+        font-size: 13px;
+    }
+    .Hss3{
+        
+    }
+}
